@@ -1,0 +1,36 @@
+#help-text {
+    display: none;
+    text-align: center;
+}
+
+#box:focus #help-text {
+    display: block;
+}
+
+#emo-row > div {
+    display: inline-block;
+}
+
+@keyframes slidein {
+  from { transform: scale(0); width: 0px; }
+  to   { transform: scale(1); width: initial; }
+}
+
+@keyframes slideout {
+  from { transform: scale(1); width: inherit; background: #000; }
+  to   { transform: scale(0); width: 0px; }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.appear {
+    animation: 1s ease 0s forwards slidein;
+    -webkit-animation: 1s ease 0s forwards slidein;
+}
+
+.disappear {
+    animation: 1s ease 0s forwards slideout;
+    -webkit-animation: 1s ease 0s forwards slideout;
+}

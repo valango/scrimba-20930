@@ -1,0 +1,29 @@
+{
+  "name": "scrimba-20930",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "",
+  "repository": "git://github.com/valango/PROJECT.git",
+  "author": "Villem Alango <villem.alango@gmail.com>",
+  "license": "MIT",
+  "keywords": [],
+  "files": [],
+  "scripts": {
+    "clean": "rimraf *.tmp *.l* reports yarn.lock",
+    "lint": "eslint .",
+    "purge": "rimraf *.tmp *.l* reports yarn.lock node_modules",
+    "test": "jest",
+    "test:coverage": "codecov"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "codecov": "^3.7.2",
+    "eslint": "^7.10.0",
+    "jest": "^26.4.2",
+    "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=10.15.1"
+  }
+}
