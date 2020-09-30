@@ -25,6 +25,7 @@ box.addEventListener("focus", function(){
 
 box.addEventListener("focusout", function(){
     text.textContent = "Click here to give your rating"
+    hideEmotions()
 })
 
 
@@ -42,7 +43,6 @@ for (let i = 0; i < 5; ++i) {
     row.appendChild(el)
     el.textContent = EMOJIS[i]
     el.classList.add('disappear')
-    // el.classList.add("hidden")
 }
 row.classList.add('hidden')
 box.appendChild(row)
@@ -54,17 +54,27 @@ box.addEventListener("keypress", ev => {
     
     row.classList.remove("hidden")
     const index = 1 * ev.key - 1
-    const el = row.children[index]
     
-    if (el.classList.contains('appear')) {
+    toggle(index, false)
+})
+
+function toggle(index, hide) {
+   const el = row.children[index]
+    
+    if (hide || el.classList.contains('appear')) {
         el.classList.add("disappear")
         el.classList.remove("appear")
     } else {
-        // el.classList.remove("initial")
         el.classList.remove("disappear")
         el.classList.add("appear")
+    } 
+}
+
+function hideEmotions() {
+    for(let i = 0; i<5; ++i) {
+        toggle(i, true)
     }
-})
+}
 
 /*
 
