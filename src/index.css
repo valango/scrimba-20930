@@ -3,6 +3,15 @@
     text-align: center;
 }
 
+#box {
+    border: #e0e0e0 solid 2px;
+    background: #e0e0e0;
+    font-family: Arial;
+    font-size: large;
+    margin: 2em;
+    text-align: center;
+}
+
 #box:focus #help-text {
     display: block;
 }

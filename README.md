@@ -10,5 +10,4 @@ However, the contents of `/src` is the actual project.
 This was an interesting stuff to do, because I don't consider myself a front-end guy at all.
 
 Implementing just showing an emoticon took minutes, but
-fiddling around with animations was a discovery trip for more than a hour. ;)
-
+fiddling around with animations was a discovery trip for more than a hour. ;).
